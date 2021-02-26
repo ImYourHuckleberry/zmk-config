@@ -37,21 +37,21 @@
     &kp LCTRL  &kp LGUI   &kp LALT       &lt NAV RET    &lt NUM_SYM SPACE   &kp COLON   &lt NAV BSPC    &kp BSPC
             >;
         };
-         num_sym {
+        num_sym {
             bindings = <
     &kp N1     &kp N2     &kp N3     &kp N4     &kp N5 &kp N6 &kp N7     &kp N8      &kp N9    &kp N0
-    &kp TAB    &trans     &trans     &trans     &kp LESS_THAN &kp GREATER_THAN &kp MINUS    &kp EQUAL   &kp GRAVE &kp SQT
-    &kp LBRC               &kp LBKT      &kp LPAR      &kp SEMI  &kp RPAR  &kp RBKT      &kp RBRC       &kp BSLH     &kp SLSH
-    &kp LCTRL &kp LGUI    &none         &trans        &trans             &kp RET     &none    &kp bootloader
+  &kp TAB    &trans     &trans     &trans     &kp LESS_THAN &kp GREATER_THAN &kp MINUS    &kp EQUAL   &kp GRAVE &kp SQT
+    &kp DEL               &none      &none      &none  &none  &none      &none       &none     &kp DOT
+    &bootloader &reset    &none         &trans        &trans             &kp RET     &trans    &kp FSLH
             >;
         };
 
     nav {
             bindings = <
-    &kp ESC    &kp UP     &none &none   &kp UP      &none       &bt BT_CLR &bt BT_NXT &bt BT_PRV &kp DEL
-    &kp LEFT   &kp DOWN   &kp RIGHT     &trans      &none &none &none      &none      &knone     &none
-    &none                 &none         &none       &none &none &none      &none      &none      &none
-    &none      &none      &none         &trans        &trans             &kp RET      &trans     &kp FSLH
+    &bt BT_CLR &bt BT_NXT &bt BT_PRV &none       &none &none &none       &kp UP       &none     &kp BSPC
+    &trans     &trans     &trans     &trans      &none &none &kp LEFT    &kp DOWN     &kp RIGHT &none
+    &none                 &none      &none       &none &none &none       &none        &none     &none
+    &none      &none      &none         &trans        &trans             &kp RET      &trans    &kp FSLH
             >;
         };
     };
